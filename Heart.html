@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
   <head>
-    <title>Mỹ Trâm</title>
+    <title>Trái tim</title>
     <meta name="Generator" content="EditPlus" />
     <meta name="Author" content="" />
     <meta name="Keywords" content="" />
@@ -19,28 +19,11 @@
         width: 100%;
         height: 100%;
       }
-      .text-title {
-     position: absolute;
-    font-size: 36px;
-    font-weight: bold;
-    /* color: white; */
-    /* width: 66px; */
-    /* height: 50px; */
-    top: 50%;
-    left: 50%;
-    margin-left: -70px;
-    margin-top: -25px;
-    background: -webkit-linear-gradient(rgb(160 10 10) 50%, rgb(255 113 184) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      }
     </style>
   </head>
 
   <body>
     <canvas id="pinkboard"></canvas>
-    <p class="text-title">Mỹ Trâm</h1>
-
     <script>
       /*
        * Settings
@@ -265,20 +248,9 @@
             context.lineTo(point.x, point.y);
           }
           context.closePath();
-
           // create the fill
-          // Create gradient
-          var gradient = context.createLinearGradient(0, 0, canvas.width, 0);
-          gradient.addColorStop("0", " magenta");
-          gradient.addColorStop("0.5", "pink");
-          gradient.addColorStop("1.0", "red");
-          // Fill with gradient
-          context.fillStyle = gradient;
-          context.font = "48px serif";
-          context.strokeText("Big smile!", 90, 90);
-          // context.fillStyle = "#d40606";
+          context.fillStyle = "#ea80b0";
           context.fill();
-
           // create the image
           var image = new Image();
           image.src = canvas.toDataURL();
